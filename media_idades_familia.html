@@ -1,0 +1,50 @@
+<meta charset = "UTF-8">
+<script>
+//1º Desafio da Lógica de Programação I.
+//Escreva um programa (Código) declarando a idade de cada componente de sua família (pai, mãe, irmãos), e por fim, a média da idade de todos.
+var idadePai = 56              
+var idadeMae = 52                    //Todas as variáveis e função são declaradas por primeiro, para poderem
+var idadePrimo = 32                  //ser utilizadas durante o texto.
+var idadeTia = 65 
+var idadeSobrinho = 6
+var primo = "Júnior"
+var sobrinho = "Murilo"
+var tia = "Mabel"
+var pai = "João"
+var mae = "Rosa"
+var media =(idadePai + idadeMae + idadePrimo + idadeTia + idadeSobrinho)/5 // Utilização das variáveis
+
+function pular(){
+	document.write("<br>")
+}
+
+function escreva(frase){
+	document.write(frase)
+	pular()
+}
+
+function destacar(destaque){
+	document.write("<h1>" + destaque + "</h1>")
+}
+
+function linha(){
+	document.write("________________________________________________________________")
+	pular()
+	pular()
+}
+
+destacar("Desafio 1")
+linha()
+escreva("A idade de meu pai, " + pai +", é " + idadePai)  //Concatenação das variáveis e outras strings;
+escreva("A idade de minha mãe, " + mae +", é " + idadeMae)//A utilização de variáveis nesse contexto auxilia
+escreva("A idade de meu primo, " + primo +", é " + idadePrimo) //na fácil alteração de valores.
+escreva("A idade de meu sobrinho, " + sobrinho +", é " + idadeSobrinho)
+escreva("A idade de minha tia, " + tia +", é " + idadeTia)
+pular()
+escreva("A média de suas idades é " + media)
+pular()
+escreva("A diferença de idade entre o mais velho e o mais novo é de " + (idadeTia-idadeSobrinho) + ", e a média de suas idades é de " + (idadeTia+idadeSobrinho)/2)
+pular()
+
+
+</script>

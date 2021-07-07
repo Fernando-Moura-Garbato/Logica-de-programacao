@@ -1,0 +1,73 @@
+<canvas width="1000" height="600"></canvas>
+<script>
+
+var tela=document.querySelector('canvas')
+var pincel=tela.getContext('2d')
+
+pincel.fillStyle='green'
+pincel.fillRect(0,0,1000,600)
+
+pincel.fillStyle='yellow'
+pincel.beginPath()
+pincel.moveTo(100,300)
+pincel.lineTo(500,550)
+pincel.lineTo(900,300)
+pincel.lineTo(500,50)
+pincel.fill()
+
+pincel.fillStyle='darkblue'
+pincel.beginPath()
+pincel.arc(500, 300, 160, 0 , 2 * 3.14)
+pincel.fill()
+
+pincel.fillStyle='white'
+pincel.fillRect(340,280,320,50)
+
+pincel.fillStyle='black'
+pincel.font='25px Arial'
+pincel.fillText('ORDEM E PROGRESSO',355,315)
+
+function desenhaEstrela(x,y){
+pincel.beginPath()
+pincel.fillStyle='white'
+pincel.moveTo(x, y-10);
+pincel.lineTo(x-2, y-2);
+pincel.lineTo(x-10, y-2);
+pincel.lineTo(x-4, y+2);
+pincel.lineTo(x-6, y+10);
+pincel.lineTo(x, y+6);
+pincel.lineTo(x+6, y+10);
+pincel.lineTo(x+4, y+2);
+pincel.lineTo(x+10, y-2);
+pincel.lineTo(x+2, y-2);
+pincel.fill();
+}
+desenhaEstrela(585,250)
+desenhaEstrela(400,360)
+desenhaEstrela(430,360)
+desenhaEstrela(460,360)
+desenhaEstrela(490,360)
+desenhaEstrela(520,360)
+desenhaEstrela(550,360)
+desenhaEstrela(580,360)
+desenhaEstrela(610,360)
+desenhaEstrela(400,390)
+desenhaEstrela(430,390)
+desenhaEstrela(460,390)
+desenhaEstrela(490,390)
+desenhaEstrela(520,390)
+desenhaEstrela(550,390)
+desenhaEstrela(580,390)
+desenhaEstrela(610,390)
+desenhaEstrela(430,420)
+desenhaEstrela(460,420)
+desenhaEstrela(490,420)
+desenhaEstrela(520,420)
+desenhaEstrela(550,420)
+desenhaEstrela(580,420)
+desenhaEstrela(460,440)
+desenhaEstrela(490,440)
+desenhaEstrela(520,440)
+desenhaEstrela(550,440)
+
+</script>
